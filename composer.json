@@ -1,0 +1,36 @@
+{
+    "name": "aitzgorri/datashow",
+    "description": "Package to learn development of laravel packages",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roko",
+            "email": "r.aitzgorri@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aitzgorri\\Datashow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aitzgorri\\Datashow\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aitzgorri\\Datashow\\DatashowProvider"
+            ],
+            "aliases": {
+                "DS": "Aitzgorri\\Datashow\\Facade"
+            }
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "orchestra/testbench": "^3.7"
+    }
+}
